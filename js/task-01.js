@@ -15,13 +15,23 @@
 // Category: Technologies
 // Elements: 5
 
-const list = document.querySelector("#categories");
-console.log(list);
+const listEl = document.querySelector("#categories");
+console.log("Number of categories:", listEl.children.length);
 
-console.log("Number of categories:", list.children.length);
+const animalItemEl = listEl.children[0];
+console.log("Category:", animalItemEl.firstElementChild.textContent);
 
-const listItem = document.querySelector(".item");
-console.log(listItem);
+const animalListEl = animalItemEl.children[1];
+console.log("Elements:", animalListEl.children.length);
 
-console.log("Category:", listItem.firstElementChild.textContent);
-console.log("Elements:");
+const productsItemEl = listEl.children[1];
+console.log("Category:", productsItemEl.firstElementChild.textContent);
+
+const productListEl = productsItemEl.children[1];
+console.log("Elements:", productListEl.children.length);
+
+const technologiesItemEl = listEl.children[2];
+console.log("Category:", technologiesItemEl.firstElementChild.textContent);
+
+const technologiesListEl = technologiesItemEl.children[1];
+console.log("Elements:", technologiesListEl.children.length);
