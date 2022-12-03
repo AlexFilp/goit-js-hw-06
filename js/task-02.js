@@ -27,6 +27,7 @@ const makeIngredients = (ingredientsArray) => {
 };
 
 const elements = makeIngredients(ingredients);
+console.log(elements);
 
 // const elements = ingredients.map((ingredient) => {
 //   const ingredientItemEl = document.createElement("li");

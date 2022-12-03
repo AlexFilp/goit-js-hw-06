@@ -21,7 +21,6 @@ const images = [
 const makeGalleryMarkup = ({ url, alt }) => {
   return `<li class = "img-item"><img src="${url}" alt="${alt}" width = "500" height = "300"></li>`;
 };
-console.log(makeGalleryMarkup);
 
 const makeGallery = images.map(makeGalleryMarkup).join("");
 
