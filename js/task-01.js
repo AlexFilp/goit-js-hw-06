@@ -18,20 +18,26 @@
 const listEl = document.querySelector("#categories");
 console.log("Number of categories:", listEl.children.length);
 
-const animalItemEl = listEl.children[0];
-console.log("Category:", animalItemEl.firstElementChild.textContent);
+for (let i = 0; i < listEl.children.length; i += 1) {
+  const element = listEl.children[i];
+  console.log("Categories:", element.firstElementChild.textContent);
+  console.log("Elements:", element.children[1].children.length);
+}
 
-const animalListEl = animalItemEl.children[1];
-console.log("Elements:", animalListEl.children.length);
+// const animalItemEl = listEl.children[0];
+// console.log("Category:", animalItemEl.firstElementChild.textContent);
 
-const productsItemEl = listEl.children[1];
-console.log("Category:", productsItemEl.firstElementChild.textContent);
+// const animalListEl = animalItemEl.children[1];
+// console.log("Elements:", animalListEl.children.length);
 
-const productListEl = productsItemEl.children[1];
-console.log("Elements:", productListEl.children.length);
+// const productsItemEl = listEl.children[1];
+// console.log("Category:", productsItemEl.firstElementChild.textContent);
 
-const technologiesItemEl = listEl.children[2];
-console.log("Category:", technologiesItemEl.firstElementChild.textContent);
+// const productListEl = productsItemEl.children[1];
+// console.log("Elements:", productListEl.children.length);
 
-const technologiesListEl = technologiesItemEl.children[1];
-console.log("Elements:", technologiesListEl.children.length);
+// const technologiesItemEl = listEl.children[2];
+// console.log("Category:", technologiesItemEl.firstElementChild.textContent);
+
+// const technologiesListEl = technologiesItemEl.children[1];
+// console.log("Elements:", technologiesListEl.children.length);

@@ -8,12 +8,14 @@ const input = document.querySelector("#validation-input");
 
 input.addEventListener("blur", (event) => {
   const inputValue = event.currentTarget.value;
-  console.log(inputValue);
+  // console.log(inputValue);
   if (inputValue.length >= 6) {
     input.classList.add("valid");
     input.classList.remove("invalid");
+    console.log("Correct!", inputValue);
   } else {
     input.classList.add("invalid");
     input.classList.remove("valid");
+    console.log("Incorrect!", inputValue);
   }
 });
