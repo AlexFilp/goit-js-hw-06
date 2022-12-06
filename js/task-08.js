@@ -18,14 +18,15 @@ function onFormSubmit(event) {
 
   if ((mail && password) === "") {
     alert("Все поля должны быть заполнены!!! А ну быстро заполнил!!!");
+    form.reset();
   } else {
     const user = {
       email: mail,
       password: password,
     };
     console.log(user);
+    form.reset();
   }
-  form.reset();
 }
 
 form.addEventListener("submit", onFormSubmit);
